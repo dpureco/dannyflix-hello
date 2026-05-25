@@ -21,6 +21,7 @@
               <span v-if="tip.important" class="tip-badge">Heads up</span>
             </div>
             <p class="tip-desc" v-html="tip.description"></p>
+            <img v-if="tip.image" :src="tip.image" :alt="tip.imageAlt" class="tip-image" />
           </div>
         </div>
       </div>
@@ -61,6 +62,8 @@ const tips = [
     icon: '🧹',
     title: 'Clean up your home screen',
     description: `Even after disabling Online Media Sources, the sidebar can still have leftover Plex items. Hover over any unwanted item and click <strong>✕</strong>, or right-click → <em>Unpin</em>. You can also drag sections around to reorder them — put the Dannyflix libraries front and centre.`,
+    image: '/assets/images/nav_example.png',
+    imageAlt: 'Example of the Plex sidebar showing Home, Watchlist, Movies and TV Shows',
   },
 ]
 </script>
@@ -135,5 +138,13 @@ const tips = [
 
 .tip-desc :deep(li) {
   line-height: 1.55;
+}
+
+.tip-image {
+  margin-top: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  max-width: 200px;
+  box-shadow: var(--shadow);
 }
 </style>

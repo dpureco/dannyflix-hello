@@ -17,6 +17,11 @@
           Open Request Portal →
         </a>
       </div>
+
+      <div class="auth-note card">
+        <span class="auth-icon">🔐</span>
+        <p>The request portal uses your <strong>Plex account</strong> to sign in — just click <em>Sign in with Plex</em> and it'll authenticate through Plex directly. No separate account needed.</p>
+      </div>
     </div>
   </section>
 </template>
@@ -49,5 +54,21 @@
   font-size: 0.95rem;
   color: var(--text-muted);
   max-width: 480px;
+}
+
+.auth-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 16px;
+  background: var(--surface-alt);
+}
+
+.auth-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+
+.auth-note p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 </style>

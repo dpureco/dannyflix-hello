@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="18" fill="url(#bg)"/>
+
+  <!-- Bold italic D — Netflix-style serif -->
+  <text
+    x="28" y="76"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="80"
+    font-weight="bold"
+    font-style="italic"
+    fill="white"
+  >D</text>
+
+  <!-- Subscript f in seafoam accent -->
+  <text
+    x="71" y="84"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="34"
+    font-weight="bold"
+    font-style="italic"
+    fill="#5eead4"
+  >f</text>
+</svg>
